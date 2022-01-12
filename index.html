@@ -115,6 +115,7 @@ function drlp()
 function die()
 {
 	clearInterval(phtmr)
+	bridge.send("VKWebAppOpenPayForm", {"app_id": YOUR_API_ID, "action": "pay-to-service", "params": {}});
 swal("Good job!", "Your score:" + score, "success", {
   button: "Once again!",
 });
