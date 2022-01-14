@@ -7,9 +7,6 @@
 <source src="l.mp3" type="audio/mpeg">
 </audio><br>
 
- <audio controls autoplay="autoplay" loop>
-<source src="m.mp3" type="audio/mpeg">
-</audio>
 
 
 <canvas id="c" width="480px" height="640px"></canvas><script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script><h1>Нажми и играй!
@@ -129,7 +126,7 @@ function drlp()
 function die()
 {
 	clearInterval(phtmr)
-	
+	navigator.vibrate(10);
 swal("Good job!", "Your score:" + score, "success", {
   button: "Once again!",
 });
@@ -163,19 +160,7 @@ function phl()
         pos.x<0 && die()
 
 	
-	score===1 && navigator.vibrate(10);
-	score===2 && navigator.vibrate(1000);
-	score===3 && navigator.vibrate(1000);
-	score===4 && navigator.vibrate(1000);
-	score===5 && navigator.vibrate(1000);
-	score===6 && navigator.vibrate(1000);
-	score===7 && navigator.vibrate(1000);
-	score===8 && navigator.vibrate(1000);
-	score===9 && navigator.vibrate(1000);
-	score===10 && navigator.vibrate(1000);
-	score===11 && navigator.vibrate(1000);
-	score===12 && navigator.vibrate(1000);
-	
+
 
 	
 
