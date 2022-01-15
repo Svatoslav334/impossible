@@ -147,7 +147,7 @@ function phl()
 	vel.x*=0.99
 	vel.y+=0.1
 	ns=sc+speed+(pos.y<(h/2)?3-pos.y/(h/6):0)
-	if(speed<4)speed+=0.01
+	if(speed<4)speed+=0.001
 
 	if (~~(sc/300)!=~~((ns)/300)) spwn(~~(ra()*9))
 	sc=ns
